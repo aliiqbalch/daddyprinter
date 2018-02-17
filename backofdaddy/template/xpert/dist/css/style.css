@@ -1,0 +1,678 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #eaeaea;
+}
+
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+
+/***************** Header *************/
+#headerBar {
+	background-image:url(images/header-bg.jpg);
+	background-position:top;
+	background-repeat:repeat-x;
+	padding-left:20px;
+}
+
+#horizentalLine {
+	background-image:url(images/horizental-line.jpg);
+	background-position:top;
+	background-repeat:repeat-x;
+}
+
+/***************** Left Column *************/
+#colLeft {
+	background-color:#de2932;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#FFF;
+}
+
+#colLeftShadow {
+	background-image:url(images/left-col-shadow.png);
+	background-repeat:repeat-y;
+	background-position:left;
+}
+
+#horizentalLine2 {
+	border-bottom:1px dotted #FFF;
+}
+/****************** For Invisiable Fields ***************************/
+.hiddenField {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#666;
+	border:1px solid #ffffff;
+}
+
+
+
+/******************* Content Area (Right Column) ****************/
+
+#titleBar {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:30px;
+	color:#CCC;
+	font-weight:bold;
+	padding-left:50px;
+	letter-spacing:0pt;
+	text-transform:uppercase;
+	border-bottom:0px dotted #464545;
+}
+/*************************** paginging *******************/
+
+.pagination {
+    padding: 8px;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+}
+
+.page {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 4px;
+    border-radius: 3px;
+    border: solid 1px #c0c0c0;
+    background: #e9e9e9;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255, .8), 0px 1px 3px rgba(0,0,0, .1);
+    /*font-size: .875em;*/
+    font-weight: bold;
+    text-decoration: none;
+    color: #717171;
+    text-shadow: 0px 1px 0px rgba(255,255,255, 1);
+}
+
+.page:hover, .page.gradient:hover {
+    background: #fefefe;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#f0f0f0));
+    background: -moz-linear-gradient(0% 0% 270deg,#FEFEFE, #f0f0f0);
+}
+
+.page.active {
+    border: none;
+    background: #de2932;
+    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
+    color: #f0f0f0;
+    text-shadow: 0px 0px 3px rgba(0,0,0, .5);
+}
+
+.page.gradient {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8f8f8), to(#e9e9e9));
+    background: -moz-linear-gradient(0% 0% 270deg,#f8f8f8, #e9e9e9);
+}
+
+.pagination.dark {
+    background: #414449;
+    color: #feffff;
+}
+
+.page.dark {
+    border: solid 1px #32373b;
+    background: #3e4347;
+    box-shadow: inset 0px 1px 1px rgba(255,255,255, .1), 0px 1px 3px rgba(0,0,0, .1);
+    color: #feffff;
+    text-shadow: 0px 1px 0px rgba(0,0,0, .5);
+}
+
+.page.dark:hover, .page.dark.gradient:hover {
+    background: #3d4f5d;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#547085), to(#3d4f5d));
+    background: -moz-linear-gradient(0% 0% 270deg,#547085, #3d4f5d);
+}
+
+.page.dark.active {
+    border: none;
+    background: #2f3237;
+    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .1);
+}
+
+.page.dark.gradient {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#565b5f), to(#3e4347));
+    background: -moz-linear-gradient(0% 0% 270deg,#565b5f, #3e4347);
+}
+.pagingStyle {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+	background-color:#CCC;
+	height:30px;
+}
+/********** Footer *********/
+#footer {
+	background-color:#FFF;
+		background-image:url(images/left-col-shadow.png);
+	background-repeat:repeat-y;
+	background-position:left;
+}
+
+.footerText {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#525252;
+}
+
+.footerText a {
+	color:#DE2932;
+	text-decoration:none;
+}
+
+.footerText a:visited {
+	color:#DE2932;
+	text-decoration:none;
+}
+
+.footerText a:hover {
+	color:#525252;
+	text-decoration:none;
+}
+
+#bottomBorder {
+	border-bottom:1px solid #CCC;
+}
+
+/************** Text **************/
+.txtGray14 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#b7b7b7;
+}
+
+.txtGray11 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#b7b7b7;
+}
+.textRed12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color:#999999;
+}
+.txtDarkGray14 {
+	
+}
+
+.txtWhite18 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#FFF;
+}
+
+.heading1 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#353535;
+	text-shadow: 1px 1px 2px #999;
+}
+.heading3 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#AF1B22;
+	text-shadow: 1px 1px 2px #999;
+}
+.detailHeading {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	color:#AF1B22;
+	text-shadow: 1px 1px 2px #999;
+}
+
+.heading2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:25px;
+	color:#666;
+	text-transform:uppercase;
+}
+
+/******************** Buttons ******************/
+a.btnSmallGray {
+	background-image:url(images/btn-small-gray.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#2c2b2b;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:2px;
+	padding-bottom:2px;
+	text-decoration:none;
+}
+
+a.btnSmallGray:hover {
+/*	background-image:url(images/btn-small-blue.jpg);
+	background-repeat:repeat-x;*/
+	background-color:#DE2932;
+	border:1px solid #012f3e;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFFFFF;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:2px;
+	padding-bottom:2px;
+	text-decoration:none;	
+}
+
+/* Left Navigation */
+.nav {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#FFF;
+	font-weight:normal;
+	text-decoration:none;
+	padding-left:5%;
+	display:block;
+	width:95%;
+	height:45px;
+	line-height:35pt;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.nav:hover {
+	background-color:#525252;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#000;
+	text-decoration:none;
+	padding-left:5%;
+	display:block;
+	width:95%;
+	height:45px;
+	line-height:35pt;
+	text-shadow: 1px 1px 1px #AF1B22;
+}
+
+
+/******************* Table *********************/
+#table {
+	border-collapse:collapse;
+	border-color:#C0C0C0;
+	border:1px solid #C0C0C0;
+}
+
+
+#table th {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#666;
+	background-color:#CCC;
+	height:20px;
+	border:1px solid #C0C0C0;
+	border-bottom:2px solid #C0C0C0;
+	/*text-shadow: 1px 1px 2px #999;*/
+}
+
+#table td {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+	border-right:1px solid #C0C0C0;
+	border-bottom:1px solid #C0C0C0;
+}
+
+#curveTable {
+	border:1px solid #FFF;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.pagingStyle {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+	background-color:#CCC;
+	height:30px;
+}
+
+
+#contentBlock {
+	
+}
+
+#showDisBox {
+	border:1px solid #CCC;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color:#FFF;
+}
+
+.noPadding {
+	padding:0px !important;
+}
+
+.row1 {
+	background-color:#E6E6E6;
+}
+
+.row2 {
+	background-color:#F2F2F2;
+}
+
+.borderTbottom {
+	border-bottom:1px solid #FFF;
+}
+
+/********************* Form **********************/
+.label {
+	
+}
+.labels {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#000;
+	margin-left:5px;
+	line-height:18pt;
+	
+	
+}
+
+
+.label1 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#FF0000;
+	margin-left:5px;
+	line-height:18pt;
+	text-align:left;
+	
+}
+
+.label2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#666;
+	margin-left:5px;
+	line-height:18pt;
+	text-align:center;
+}
+.formField {
+	
+}
+
+
+.formField2 {
+	
+}
+
+.formField:focus {
+	
+}
+
+
+/* Button */
+
+.btn {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#FFF;
+	padding: 5px 15px 5px 15px;
+	background-color:#DE2932;
+	border:1px solid #920B14;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	text-shadow: 1px 1px #000;
+}
+
+.btn:hover {
+	color:#FFF;
+	background-color:#454545;
+	border:1px solid #000;
+	text-shadow: 1px 2px #7D1318;
+}
+
+
+
+/***************** Table Effect ***************************/
+/* These classes are used by the script as rollover effect for table 1 and 2 */	
+	
+.tableRollOverEffect1 {
+		background-color:#E6E7E8;
+}
+
+	
+.tableRowClickEffect1 {
+		background-color:#de2932;
+		font-weight:bold;
+		color:#FFF;
+	}
+/*  Picture Border ******************/
+
+.borderPic {
+	border:3px solid #AF1B22;
+	color:#CCCCCC;
+	padding:3px;
+	background:#CCC;
+	height:110px;
+	width:90px;
+}
+/******************* Form Validation **************************/
+.ErrorField {
+    border-color: #D00;
+    color: #D00;
+    background: #FFFFFE;
+}
+
+span.ValidationErrors {
+    display: inline-block;
+    font-size: 12px;
+    color: #D00;
+    margin-left: 10px;
+    font-style: italic;
+	background-image:url(images/icon/alert.png);
+	background-position:left;
+	background-repeat:no-repeat;
+	text-indent:20px;
+}
+
+/*************** Timer Picker *****************/
+.timePicker {
+			border: 1px solid gray;
+			overflow-y: scroll;
+			height: 120px;
+			width: 120px;
+			position: absolute;
+			background-color: #fff;
+			text-align:left;
+	}
+		
+		.timePicker ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		.timePicker ul li p {
+			padding: 3px;
+			margin: 0;
+		}
+	
+		.timePicker ul li:hover, .timePicker-selected {
+			background-color: gray;
+			color: #fff;
+		}
+		
+/*************************** Error ************************************/	
+.showError {
+	width:85%;
+	padding:10px;
+	vertical-align:middle;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #CC3300;
+	line-height:16pt;
+	background-image:url(/images/warning.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	padding-right:10px;	
+	border:1px solid #FF0000;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background-color:#FFFF99;
+	color: #CC3300;
+	
+}
+/*************************menu*************************************/
+#cssmenu {
+  width: 240px;
+}
+#cssmenu > ul > li > a {
+  padding-right: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  background: #AF1B22;
+  color: #fff;
+  border-bottom:1px dotted #FFF;
+  text-transform:capitalize;
+  position: relative;
+}
+#cssmenu > ul > li > a > span {
+  background: #de2932;
+  padding: 10px;
+  display: block;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: 300;
+}
+#cssmenu > ul > li > a:hover {
+  text-decoration: none;
+}
+#cssmenu > ul > li.active {
+  border-bottom: none;
+}
+#cssmenu > ul > li.active > a {
+  color: #fff;
+}
+#cssmenu > ul > li.active > a span {
+  background: #AF1B22;
+}
+
+#cssmenu ul ul {
+  display: none;
+}
+#cssmenu ul ul li {
+	border-bottom:1px dotted #AF1B22;
+  
+  border-top: 0;
+}
+#cssmenu ul ul a {
+  padding: 10px;
+  display: block;
+  color: #fff;
+  font-size: 13px;
+}
+#cssmenu ul ul a:hover {
+  color: #000;
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+#cssmenu a {
+  line-height: 1.9;
+}
+/************************* LEFT COLUMN ACCORDIAN *************************/
+.glossymenu{
+	margin: 5px 0;
+	padding: 0;
+	width: 240px; /*width of menu*/
+	border-bottom-width: 0;
+}
+
+.glossymenu a.menuitem{
+	background: #AF1B22;
+	font: normal 14px Arial, Verdana, Helvetica, sans-serif;
+	color: white;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: 230px;
+	text-align:left;
+	line-height:15pt;
+	padding: 10px 0 10px 0;
+	padding-left: 10px;
+	text-decoration: none;
+	clear:both;
+	border-bottom:1px dotted #DE2932;
+}
+
+
+.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+	color: white;
+}
+
+.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+}
+
+.glossymenu a.menuitem:hover{
+	background-color:#83141A;
+}
+
+.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+	background: #DE2932;
+	width: 230px;
+}
+
+.glossymenu div.submenu ul{ /*UL of each sub menu*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.glossymenu div.submenu ul li{
+	
+}
+
+.glossymenu div.submenu ul li a{
+	display: block;
+	font: normal 13px "Arial", Verdana, Helvetica, sans-serif;
+	color: #500C0F;
+	width: 230px;
+	text-decoration: none;
+	padding: 6px 0 6px 0;
+	padding-left: 10px;
+	border-bottom:1px dotted #AF1B22;
+}
+
+.glossymenu div.submenu ul li a:hover{
+	background: #E4565E;
+	colorz: white;
+}

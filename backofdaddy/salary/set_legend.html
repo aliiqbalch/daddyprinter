@@ -1,0 +1,54 @@
+<html>
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <!-- Zabuto Calendar -->
+    <script src="zabuto_calendar.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="zabuto_calendar.min.css">
+	<style>
+		.grade-1 {
+			background-color: #FA2601;
+		}
+		.grade-2 {
+			background-color: #FA8A00;
+		}
+		.grade-3 {
+			background-color: #FFEB00;
+		}
+		.grade-4 {
+			background-color: #27AB00;
+		}
+		.purple {
+			background-color: purple;
+		}
+	</style>
+</head>
+<body>
+<!-- container -->
+<div class="container example">
+    <h1>Attandance Calendar</h1>
+    <div class="row">
+        <div class="col-xs-5">
+            <div id="my-calendar"></div>
+            <script type="application/javascript">
+                $(document).ready(function () {
+                    $("#my-calendar").zabuto_calendar({
+                        legend: [
+                            {type: "block", label: "Absent", classname: 'grade-1'},
+							{type: "block", label: "Present", classname: 'grade-4'},
+							{type: "block", label: "Half Leave", classname: 'grade-2'},
+							{type: "block", label: "Leave", classname: 'grade-3'},
+							{type: "block", label: "Spend Hours", classname: 'purple'},
+                        ],
+                        ajax: {
+                            url: "show_data.php?grade=1"
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</div>
+<!-- /container -->
+</body>
+</html>

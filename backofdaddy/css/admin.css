@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #eaeaea;
+}
+
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+
+#bottomBorder {
+	border-bottom:1px solid #CCC;
+}
+
+/************** Text **************/
+
+.heading1 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#353535;
+	text-shadow: 1px 1px 2px #999;
+}
+
+
+/******************** Buttons ******************/
+a.btnSmallGray {
+	background-image:url(images/btn-small-gray.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#2c2b2b;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:2px;
+	padding-bottom:2px;
+	text-decoration:none;
+}
+
+a.btnSmallGray:hover {
+/*	background-image:url(images/btn-small-blue.jpg);
+	background-repeat:repeat-x;*/
+	background-color:#DE2932;
+	border:1px solid #012f3e;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFFFFF;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:2px;
+	padding-bottom:2px;
+	text-decoration:none;	
+}
+
+/* Left Navigation */
+.nav {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#FFF;
+	font-weight:normal;
+	text-decoration:none;
+	padding-left:5%;
+	display:block;
+	width:95%;
+	height:45px;
+	line-height:35pt;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.nav:hover {
+	background-color:#525252;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#000;
+	text-decoration:none;
+	padding-left:5%;
+	display:block;
+	width:95%;
+	height:45px;
+	line-height:35pt;
+	text-shadow: 1px 1px 1px #AF1B22;
+}
+
+
+/******************* Table *********************/
+
+#contentBlock {
+	border:1px solid #CCC;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color:#FFF;
+}
+
+.noPadding {
+	padding:0px !important;
+}
+
+/********************* Form **********************/
+.label {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#666;
+	margin-left:5px;
+	line-height:18pt;
+	text-align:left
+}
+
+.formField {
+	background-image:url(../images/form-field-bg.jpg);
+	background-repeat:repeat-x;
+	background-position:top;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#666;
+	border:1px solid #cdcccc;
+	padding:5px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.formField:focus {
+	border:1px solid #999;
+}
+
+
+/* Button */
+
+.btn {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#FFF;
+	padding: 5px 15px 5px 15px;
+	background-color:#DE2932;
+	border:1px solid #920B14;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	text-shadow: 1px 1px #000;
+}
+
+.btn:hover {
+	color:#FFF;
+	background-color:#454545;
+	border:1px solid #000;
+	text-shadow: 1px 2px #7D1318;
+}
+
+
+
+
+/******************* Form Validation **************************/
+.ErrorField {
+    border-color: #D00;
+    color: #D00;
+    background: #FFFFFE;
+}
+
+span.ValidationErrors {
+    display: inline-block;
+    font-size: 12px;
+    color: #D00;
+    margin-left: 10px;
+    font-style: italic;
+	background-image:url(images/icon/alert.png);
+	background-position:left;
+	background-repeat:no-repeat;
+	text-indent:20px;
+}
+
+.errorText {
+	width:100%;
+	height:30px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#FFF;
+	background-color:#D00;
+}
