@@ -175,7 +175,7 @@
     </style>
 </head>
 <body>
-<table width='100%'>
+<table width='100%' >
     <tbody>
     <tr>
         <td colspan='2'>
@@ -183,7 +183,7 @@
         </td>
     </tr>
     <tr>
-        <td width='50%'>
+        <td width='50%' >
             <table width='100%'>
                 <tbody>
                     <tr>
@@ -201,7 +201,7 @@
                 </tbody>
             </table>
         </td>
-        <td width='50%'>
+        <td width='50%' >
             <img style='width:300px;' src='../../assets/images/logo/logoPrint.png'>
         </td>
     </tr>
@@ -242,21 +242,21 @@
             </table>
         </td>
     </tr>
-    <tr>
-        <td colspan='2'>
-             <table width='100%' border='1' cellspacing='0'>
-                <thead>
-                    <tr>
-                        <th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Item #</th>
-						<th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Title</th>
-                        <th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Description</th>
-                        <th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Size</th>
-                        <th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Quantity</th>
-                        <th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Unit Price</th>
-                        <th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Total</th>
-                    </tr>
-                </thead>
-                <tbody>";
+	</tbody>
+	</table>
+	 <table width='100%' border='1' cellspacing='0'>
+	<thead>
+		<tr>
+			<th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Item #</th>
+			<th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Title</th>
+			<th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Description</th>
+			<th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Size</th>
+			<th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Quantity</th>
+			<th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Unit Price</th>
+			<th style='background:#F58634;color:#FFFFFF;text-align:left; padding: 5px;border:#000 solid 1px;'>Total</th>
+		</tr>
+	</thead>
+	<tbody>";
 		$i = 0;
 		$selectSql1 = "SELECT * FROM `order_detail` WHERE `order_id` = $orderId";
 		$result1 = dbQuery($dbConn,$selectSql1);
@@ -288,12 +288,13 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
                     </tr>";
 				}
 			}
 		}
 		$html .="<tr>
-                        <td colspan='5' style='background:#bbbbbb;'></td>
+                        <td colspan='6' style='background:#bbbbbb;'></td>
                         <td>".$total."</td>
                     </tr>";
 		$total = $total;
@@ -302,7 +303,7 @@
 			$tax = $tax / 100;
 			$total = $total + $tax;
 			$html.="<tr>
-                        <td colspan='5' style='text-align: right;'>Income Tax & WHT Tax</td>
+                        <td colspan='6' style='text-align: right;'>Income Tax & WHT Tax</td>
                         <td>".$tax."</td>
                     </tr>";
 		}
@@ -310,7 +311,7 @@
 			$discount = $_POST['discount'];
 			$total = $total - $discount;
 			$html .="<tr>
-                        <td colspan='5' style='text-align: right;'>Discount</td>
+                        <td colspan='6' style='text-align: right;'>Discount</td>
                         <td>".$discount."</td>
                     </tr>";
 		}
@@ -318,20 +319,21 @@
 			$advance = $_POST['advance'];
 			$total = $total - $advance;
 			$html .="<tr>
-                            <td colspan='5' style='text-align: right;'>Advance</td>
+                            <td colspan='6' style='text-align: right;'>Advance</td>
                             <td>".$advance."</td>
                         </tr>";
 		}
 		$html .="<tr>
-                        <td colspan='5' style='text-align: center;background:#bbbbbb;'>Total</td>
+                        <td colspan='6' style='text-align: center;background:#bbbbbb;'>Total</td>
                         <td>".$total."</td>
-                    </tr>
-                </tbody>
-            </table>
-        </td>
-    </tr>";
+                </tr>
+		</tbody>
+		</table>
+		<table>
+		<tbody>";
 		if(!empty($row['order_note'])){
-			$html .= " <tr>
+			$html .= "
+			<tr>
         <td colspan='2' style='text-align: center;background: blue;color:white;'>".$row['order_note']."</td>
     </tr>";
 		}
